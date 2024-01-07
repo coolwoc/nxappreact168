@@ -1,0 +1,38 @@
+{
+  "npmScope": "happyorg",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "tickets": {
+      "implicitDependencies": ["api"],
+      "tags": []
+    },
+    "tickets-e2e": {
+      "tags": []
+    },
+    "api": {
+      "tags": []
+    },
+    "data": {
+      "tags": []
+    },
+    "agent": {
+      "implicitDependencies": ["api", "agent-api"],
+      "tags": []
+    },
+    "agent-e2e": {
+      "tags": []
+    },
+    "ticket-list": {
+      "tags": []
+    },
+    "agent-api": {
+      "tags": []
+    }
+  }
+}
